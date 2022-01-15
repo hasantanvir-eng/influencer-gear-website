@@ -32,7 +32,7 @@
     line-height: 70px;
     font-weight: bold;
 }
-.booking{
+.btn{
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
@@ -44,7 +44,7 @@
     border-radius: 41px;
     transition: transform 2s ease-in-out;
 }
-.booking:hover{
+.btn:hover{
     transform: scale(1.2);
 }
 .fa-arrow-right{
@@ -117,6 +117,43 @@ hr{
     color:  rgba(224, 44, 109, 0.87);;
 }
 
+/* ------------------------
+     payment section  
+---------------------------*/
+.payment-section{
+    margin-top: 120px;
+}
+.payment-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.payment-title h1{
+    font-size: 2em;
+    line-height: 30px;
+}
+.payment-title h3{
+    letter-spacing: 3px
+}
+.payments{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.payment-frame{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.payment-detail img{
+    width: 80%;
+}
+.payment-detail p{
+    padding: 10px;
+    text-align: justify;
+}
+
 /*--------------------------
      footer section  
 ----------------------------*/
@@ -157,3 +194,191 @@ footer{
 .media-icon i{
     color: white;
 }
+
+
+/* ----------------------
+    media query 
+-------------------------*/
+
+
+
+/* mobile devices */
+@media screen and (min-width: 0px) and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    #website-title{
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+    .influence-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-detail{
+        width: 100%;
+    }
+    .header-detail p{
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-picture{
+        width: 100%;
+    }
+    .header-picture img{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .header-detail h1{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .company-logo{ 
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;   
+    }   
+    .collectives{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 40px;
+    }
+    .payment-title h1{
+        font-size: 1.6em;
+        line-height: 30px;
+    }
+    .payment-title h3{
+        letter-spacing: 2px;
+    }
+    .payments{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin-bottom: -60px;
+    }
+    footer{
+        width: 100%;   
+        height: 200px;
+    }
+    .footer-info h1{
+       font-size: 20px;
+    }
+    .footer-info h3{
+        font-size: 15px;
+    }
+    .media-icon{
+        margin-top: 15px;
+    }
+    .media-icon a{
+        background-color: rgba(128, 128, 128, 0.2);
+        border-radius: 50%;
+        padding: 8px;
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 15px;  
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    #see-more{
+        font-size: 30px;       
+    }
+    .container{
+        width: 100%;
+    }
+    #website-title{
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .influence-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-detail{
+        width: 100%;
+    }
+    .header-detail p{
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-picture{
+        width: 100%;
+    }
+    .header-picture img{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .header-detail h1{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .company-logo{ 
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;   
+    }   
+    .collectives{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 40px;
+    }
+    .payment-title h1{
+        font-size: 1.6em;
+        line-height: 30px;
+    }
+    .payment-title h3{
+        letter-spacing: 2px;
+    }
+    .payments{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin-bottom: -60px;
+    }
+    footer{
+        width: 100%;   
+        height: 200px;
+    }
+    .footer-info h1{
+       font-size: 20px;
+    }
+    .footer-info h3{
+        font-size: 15px;
+    }
+    .media-icon{
+        margin-top: 15px;
+    }
+    .media-icon a{
+        background-color: rgba(128, 128, 128, 0.2);
+        border-radius: 50%;
+        padding: 8px;
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 15px;  
+    }
+}
+
+
